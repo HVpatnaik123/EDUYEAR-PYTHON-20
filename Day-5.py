@@ -25,24 +25,32 @@ my_list = [1,6,7,8,9,10,11,2,3,4,5]
 my_list.sort()
 print("Minimum Number is: ", my_list[0])
 
+#option-1
 my_list.sort(reverse = True)
 print("Maximum Number is: ", my_list[0])
 
+#option-2
+print("Maximum Number is: ", my_list[-1])   
 
-#assignment-3 (showing me a syntax error. please rectify my mistake)
+#assignment-3 
+'''
+x = [1,2,3,2,4]
 
-my_list = []
-
-for item in range(0, 100):
-    user_inp = int(input("enter your number to list: ")
-    my_list.append(user_inp)
-    if user_inp =='q':
-        x = my_list[::-1]
-        if x==my_list:
+for item in x:
+    z = x[::-1]
+    if x[item] == z[item]:
             print("list is palindrome")
-            print(my_list)
-        else:
+            print(x)
+    else:
             print("Not a palindrome")
-            print(my_list)    
+            print(x)        
+    
+'''
+x = [1,2,3,2,1]
+y = x[::-1]
+if x==y:
+    print('palindrome',x)
+else:
+    print('not a palindrome',x)
     
 
